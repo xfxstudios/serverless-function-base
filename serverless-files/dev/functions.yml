@@ -1,0 +1,10 @@
+functions:
+  helloWorld:
+    handler: .dist/src/index.helloWorld
+    events:
+      - http:
+          path: hello
+          method: get
+      # - http:
+      #     path: /{proxy+}
+      #     method: ANY

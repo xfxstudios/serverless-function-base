@@ -1,0 +1,32 @@
+{
+  "name": "aws_serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && sls offline --stage dev start",
+    "start": "sls offline start",
+    "build": "tsc",
+    "deploy": "serverless deploy",
+    "deploy:dev": "serverless deploy --stage dev --region us-east-1",
+    "deploy:qa": "serverless deploy --stage qa --region us-east-1",
+    "deploy:prod": "serverless deploy --stage prod --region us-east-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.3.2",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1408.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-http": "^3.2.0",
+    "serverless-offline": "^12.0.4",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119"
+  }
+}
