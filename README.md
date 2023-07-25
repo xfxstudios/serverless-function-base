@@ -15,6 +15,14 @@ npm run dev
 
 <p>Create configuration files by development environment in the Serverless-Files folder</p>
 
+## For Deploy
+
+```bash
+npx serverless deploy
+#or
+npm run deploy
+```
+
 ## Docker
 
 <p>In development process</p>
